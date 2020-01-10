@@ -18,6 +18,10 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- name: skipComponentGovernanceDetection
+  value: true
+
 resources:
   repositories:
   - repository: RuntimeRepo
