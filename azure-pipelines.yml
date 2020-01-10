@@ -18,9 +18,16 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  repositories:
+  - repository: DotnetRuntimeRepo
+    type: github
+    endpoint: MyFirstProject
+    name: dotnet/runtime
+
 steps:
 
-- checkout: github://dotnet/runtime
+- checkout: DotnetRuntimeRepo
 
 - bash: |
     echo hello
