@@ -20,14 +20,14 @@ pool:
 
 resources:
   repositories:
-  - repository: DotnetRuntimeRepo
+  - repository: RuntimeRepo
     type: github
     endpoint: MyFirstProject
-    name: dotnet/runtime
+    name: akoeplinger/repo-sync-test-runtime
 
 steps:
 
-- checkout: DotnetRuntimeRepo
+- checkout: RuntimeRepo
 
 - bash: |
     echo hello
