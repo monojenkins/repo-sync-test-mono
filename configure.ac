@@ -36,7 +36,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 MONO_VERSION_MAJOR=`echo $VERSION | cut -d . -f 1`
 MONO_VERSION_MINOR=`echo $VERSION | cut -d . -f 2`
-MONO_VERSION_BUILD=`echo $VERSION | cut -d . -f 3`
+MONO_VERSION_BUILD=`echo $VERSION | cut -d . -f 1337`
 
 #
 # This is the version of the corlib-runtime interface. When
