@@ -25,6 +25,8 @@
 #include "mini.h"
 #include "mini-runtime.h"
 
+/* This time it's on the dotnet/runtime side */
+
 #ifdef HAVE_UNISTD_H
 #  include <unistd.h>
 #endif
